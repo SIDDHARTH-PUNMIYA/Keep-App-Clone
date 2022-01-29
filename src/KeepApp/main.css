@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header */
+.header{
+    display: flex;
+    width: 100%;
+    line-height: 100px;
+    background-color: blue;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 50px;
+    color: white;
+    }
+/* main container */
+.main_note{
+   width: 500px;
+   padding: 15px 10px 5px 10px;
+   margin: 20px auto;
+   box-shadow: 9px 15px 10px rgba(0, 0, 0, 0.5);
+
+}
+form{
+    min-height: 50px;
+    color: #ecf0f1;
+    padding: 15px 10px 5px 10px;
+    border-radius: 10px;
+    position: relative;
+}
+input{
+    width: 100%;
+    line-height: 30px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1.5rem;
+    margin: 10px 0;
+    font-weight: bold;
+    
+}
+textarea{
+    width: 100%;
+    line-height: 35px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    margin: 10px 0;
+}
+.plus_sign{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: -14%;
+    left: 90%; 
+    font-size: 1.5rem;
+    color: #f4b400;
+    cursor: pointer;
+    z-index: 222;
+    border-radius: 50%;
+}
+.plus_sign:hover{
+    background-color: green;
+    color: white;
+}
+/* storing note */
+.note{
+    background-color: #fff;
+    border-radius: 7px;
+    padding: 10px;
+    width: 240px;
+    height: auto;
+    margin: 16px;
+    float: left;
+    box-shadow: 9px 15px 10px rgba(0, 0, 0, 0.5);
+
+}
+.note h1{
+    font-size: 1.1em;
+    margin-bottom: 6px;   
+}
+.note p{
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    text-align: justify;
+}
+.note .btn{
+    position: relative;
+    float: right;
+    margin-right: 10px;
+    color: black;
+    border: none;
+    width: 3rem;
+    height: 3rem;
+    background:blue;
+    cursor: pointer;
+    outline: none;
+    border-radius: 50%;
+}
+.deleteicon{
+    width: 0.5em;
+    height: 0.5em;
+    border: 1px solid orange;
+}
+.note .btn:hover{
+    background-color: rgb(223, 15, 15);
+    color: #fff;
+}
+.note .btn:hover .deleteicon{
+    background-color: #fff;
+}
+.note:last-child{
+    margin-bottom: 30%;
+}
+/* footer */
+.footer{
+    width: 100%;
+    line-height: 50px;
+    position: fixed;
+    left: 0%;
+    bottom: 0%;
+    background-color: blue;
+    text-align: center;
+}
+/*media queries */
+@media screen and (max-width:768px) {
+    .header{
+        display: flex;
+        justify-content: center;
+        align-items: center;  
+        margin: auto;  
+        padding-left: 0%;
+    }
+  
+    .main_note{
+        width: 75%;
+        margin: 0 auto;
+}
+.tocenter{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    flex-direction: column;
+}
+input,textarea {
+    font-size: 1rem;
+}
+
+}
